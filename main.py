@@ -43,6 +43,6 @@ def create_posts(new_post: Post):
         This is an API function thar creates posts
     """
 
-    # print(payload)
+    print(new_post)
 
     return {"data": f"{new_post}"}
