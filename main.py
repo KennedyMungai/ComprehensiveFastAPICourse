@@ -49,6 +49,6 @@ def create_posts(new_post: Post):
         This is an API function thar creates posts
     """
 
-    print(new_post)
+    print(new_post.published)
 
     return {"data": f"{new_post}"}
