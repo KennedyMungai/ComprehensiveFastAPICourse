@@ -106,4 +106,4 @@ def delete_post(post_id: int):
     """
     index = find_index_post(id)
     my_posts.pop(index)
-    return {"message": "post was successfully deleted"}
+    return Response(status_code=status.HTTP_204_NO_CONTENT)
