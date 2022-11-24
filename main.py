@@ -39,4 +39,4 @@ def create_posts(payload: dict = Body(...)):
 
     print(payload)
 
-    return {"message": "Successfully created posts"}
+    return {"new_post": f"title: {payload['title']} content: {payload['content']}"}
