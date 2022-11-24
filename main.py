@@ -6,7 +6,7 @@
 """
 from typing import Optional
 from random import randrange
-from fastapi import FastAPI, Response, status
+from fastapi import FastAPI, Response, status, HTTPException
 from pydantic import BaseModel
 
 
