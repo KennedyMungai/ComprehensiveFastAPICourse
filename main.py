@@ -55,6 +55,9 @@ def create_posts(post: Post):
     """
         This is an API function thar creates posts
     """
+    post_dict = post.dict()
+    post_dict['id'] = randrange(1000000)
+
     my_posts.append(post.dict())
 
     return {"data": f"{post}"}
