@@ -97,7 +97,7 @@ def get_post(post_id: int, response: Response):
     return {"Post": post}
 
 
-@app.delete("/posts/{post_id}")
+@app.delete("/posts/{post_id}", status_code=status.HTTP_204_NO_CONTENT)
 def delete_post(post_id: int):
     """A simple function for deleting posts
 
