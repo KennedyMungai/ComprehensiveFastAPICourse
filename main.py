@@ -45,7 +45,7 @@ def get_posts():
     return {"data": " This is all your posts"}
 
 
-@app.post("/createposts")
+@app.post("/posts")
 def create_posts(post: Post):
     """
         This is an API function thar creates posts
