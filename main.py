@@ -71,7 +71,7 @@ def get_post(post_id: int):
         id (int): The id of the post is passed here
     """
     post = find_post(post_id)
-    return {"Post": f"{post}"}
+    return {"Post": post}
 
 
 def find_post(id: int):
