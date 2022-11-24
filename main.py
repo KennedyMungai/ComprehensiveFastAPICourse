@@ -9,7 +9,7 @@ app = FastAPI()
 
 
 @app.get("/")
-async def root():
+def root():
     """This is an asynchronous function that functions as the root of the API
 
     Returns:
