@@ -85,7 +85,7 @@ def get_post(post_id: int, response: Response):
     post = find_post(post_id)
 
     if not post:
-        response.status_code = status.HTTP_404_NOT_FOUND
-        return {"message": f"post with id: {post_id} not found"}
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
+                            detail=f"post with id: {id} was not found")
 
     return {"Post": post}
