@@ -5,9 +5,9 @@
         I'm currently taking a FastAPI course from freecodecamp
 """
 from typing import Optional
+from random import randrange
 from fastapi import FastAPI
 from pydantic import BaseModel
-from random import randrange
 
 
 app = FastAPI()
