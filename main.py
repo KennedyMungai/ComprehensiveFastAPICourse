@@ -83,4 +83,8 @@ def get_post(post_id: int, response: Response):
         id (int): The id of the post is passed here
     """
     post = find_post(post_id)
+
+    if not post:
+        response.status_code = 404
+
     return {"Post": post}
