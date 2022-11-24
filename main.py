@@ -1,6 +1,6 @@
 """
 The main File for this API project
-    Author: Kennedy Mungai
+Author: Kennedy Mungai
 """
 from fastapi import FastAPI
 
