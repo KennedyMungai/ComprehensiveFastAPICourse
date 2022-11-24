@@ -72,3 +72,15 @@ def get_post(post_id: int):
     """
     print(id)
     return {"post_detail": f"Here is post {id}"}
+
+
+def find_post(id: int):
+    """
+    This is a function whose work is to find the posts
+
+    Args:
+        id (int): This is the Id of the post
+    """
+    for p in my_posts:
+        if p["id"] == id:
+            return p
