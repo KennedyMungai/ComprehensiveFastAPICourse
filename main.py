@@ -54,10 +54,6 @@ def create_posts(post: Post):
     """
         This is an API function thar creates posts
     """
-
-    print(post)
-    print(post.dict())
-
     my_posts.append(post.dict())
 
     return {"data": f"{post}"}
