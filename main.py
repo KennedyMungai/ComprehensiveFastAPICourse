@@ -64,7 +64,7 @@ def create_posts(post: Post):
 
 
 @app.get("/posts/{post_id}")
-def get_post(post_id: int):
+def get_post(post_id: int, response: Response):
     """
         This function is meant to fetch one individual post
     Args:
@@ -74,7 +74,7 @@ def get_post(post_id: int):
     return {"Post": post}
 
 
-def find_post(_id: int, response: Response):
+def find_post(_id: int):
     """
     This is a function whose work is to find the posts
 
