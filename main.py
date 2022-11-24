@@ -61,3 +61,14 @@ def create_posts(post: Post):
     my_posts.append(post_dict)
 
     return {"data": f"{post_dict}"}
+
+
+@app.get("/posts/{post_id}")
+def get_post(id: int):
+    """
+        This function is meant to fetch one individual post
+    Args:
+        id (int): The id of the post is passed here
+    """
+    print(id)
+    return {"post_detail": f"Here is post {id}"}
