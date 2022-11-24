@@ -4,7 +4,7 @@
     Project: ComprehensiveFastAPICourse
         I'm currently taking a FastAPI course from freecodecamp
 """
-from fastapi import FastAPI
+from fastapi import Body, FastAPI
 
 
 app = FastAPI()
@@ -32,7 +32,7 @@ def get_posts():
 
 
 @app.post("/createposts")
-def create_posts():
+def create_posts(payload: dict = Body):
     """
         This is an API function thar creates posts
     """
