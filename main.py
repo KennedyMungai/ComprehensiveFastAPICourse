@@ -51,6 +51,7 @@ def create_posts(post: Post):
         This is an API function thar creates posts
     """
 
-    print(post.rating)
+    print(post)
+    print(post.dict())
 
     return {"data": f"{post}"}
