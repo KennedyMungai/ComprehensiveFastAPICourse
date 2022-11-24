@@ -62,7 +62,7 @@ def get_posts():
     return {"data": " This is all your posts"}
 
 
-@app.post("/posts")
+@app.post("/posts", status_code=status.HTTP_201_CREATED)
 def create_posts(post: Post):
     """
         This is an API function thar creates posts
