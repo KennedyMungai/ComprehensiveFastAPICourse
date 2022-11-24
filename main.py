@@ -29,3 +29,12 @@ def get_posts():
         This is a simple function that retrieves all the posts
     """
     return {"data": " This is all your posts"}
+
+
+@app.post("/createposts")
+def create_posts():
+    """
+        This is an API function thar creates posts
+    """
+
+    return {"message": "Successfully created posts"}
