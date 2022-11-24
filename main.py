@@ -104,3 +104,6 @@ def delete_post(post_id: int):
     Args:
         post_id (int): The id of the post to be deleted
     """
+    index = find_index_post(id)
+    my_posts.pop(index)
+    return {"message": "post was successfully deleted"}
