@@ -89,3 +89,12 @@ def get_post(post_id: int, response: Response):
                             detail=f"post with id: {id} was not found")
 
     return {"Post": post}
+
+
+@app.delete("/posts/{post_id}")
+def delete_post(post_id: int):
+    """A simple function for deleting posts
+
+    Args:
+        post_id (int): The id of the post to be deleted
+    """
