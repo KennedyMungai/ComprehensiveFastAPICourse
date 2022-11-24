@@ -104,6 +104,6 @@ def delete_post(post_id: int):
     Args:
         post_id (int): The id of the post to be deleted
     """
-    index = find_index_post(id)
+    index = find_index_post(post_id)
     my_posts.pop(index)
     return Response(status_code=status.HTTP_204_NO_CONTENT)
