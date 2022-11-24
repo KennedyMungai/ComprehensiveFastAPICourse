@@ -20,3 +20,11 @@ def root():
     return {
         "message": "Welcome to this dank API"
     }
+
+
+@app.get("/posts")
+def get_posts():
+    """
+    This is a simple function that retrieves all the posts
+    """
+    return {"data": " This is all your posts"}
