@@ -64,7 +64,7 @@ def create_posts(post: Post):
 
 
 @app.get("/posts/{post_id}")
-def get_post(id: int):
+def get_post(post_id: int):
     """
         This function is meant to fetch one individual post
     Args:
