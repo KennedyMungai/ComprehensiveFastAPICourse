@@ -1,8 +1,8 @@
 """
-The main File for this API project
-Author: Kennedy Mungai
-Project: ComprehensiveFastAPICourse
-    I'm currently taking a FastAPI course from freecodecamp
+    The main File for this API project
+    Author: Kennedy Mungai
+    Project: ComprehensiveFastAPICourse
+        I'm currently taking a FastAPI course from freecodecamp
 """
 from fastapi import FastAPI
 
