@@ -19,6 +19,7 @@ class Post(BaseModel):
     """
     title: str
     content: str
+    published: bool
 
 
 @app.get("/")
