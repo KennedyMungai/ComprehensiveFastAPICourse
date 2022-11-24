@@ -18,5 +18,5 @@ def root():
         JSON: Returns your typical JSON string although it is hardcoded
     """
     return {
-        "message": "Hello World"
+        "message": "Welcome to this dank API"
     }
