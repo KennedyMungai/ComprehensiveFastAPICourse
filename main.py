@@ -32,9 +32,11 @@ def get_posts():
 
 
 @app.post("/createposts")
-def create_posts(payload: dict = Body):
+def create_posts(payload: dict = Body(...)):
     """
         This is an API function thar creates posts
     """
+
+    print(payload)
 
     return {"message": "Successfully created posts"}
