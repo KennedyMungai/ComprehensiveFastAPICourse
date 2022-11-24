@@ -46,11 +46,11 @@ def get_posts():
 
 
 @app.post("/createposts")
-def create_posts(new_post: Post):
+def create_posts(post: Post):
     """
         This is an API function thar creates posts
     """
 
-    print(new_post.published)
+    print(post.rating)
 
-    return {"data": f"{new_post}"}
+    return {"data": f"{post}"}
