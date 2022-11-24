@@ -24,7 +24,10 @@ class Post(BaseModel):
     rating: Optional[int] = None
 
 
-my_posts = []
+my_posts = [
+    {"title": "title of post 1", "content": "Content of post 1", "id": 1},
+    {"title": "Favorite foods", "content": "I like pizza", "id": 2},
+]
 
 
 @app.get("/")
