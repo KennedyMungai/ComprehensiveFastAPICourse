@@ -38,11 +38,11 @@ def get_posts():
 
 
 @app.post("/createposts")
-def create_posts(payload: dict = Body(...)):
+def create_posts(new_post: Post):
     """
         This is an API function thar creates posts
     """
 
-    print(payload)
+    # print(payload)
 
-    return {"new_post": f"Title:- {payload['title']} Content:- {payload['content']}"}
+    return {"data": f"{new_post}"}
