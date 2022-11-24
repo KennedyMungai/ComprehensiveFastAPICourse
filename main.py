@@ -24,6 +24,9 @@ class Post(BaseModel):
     rating: Optional[int] = None
 
 
+my_posts = []
+
+
 @app.get("/")
 def root():
     """
