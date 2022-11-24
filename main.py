@@ -12,6 +12,11 @@ app = FastAPI()
 
 
 class Post(BaseModel):
+    """
+        This is a class that defined the type of data that is passed on to the CreatePosts function
+    Args:
+        BaseModel (_pydantic class_): I really dont know much about BaseModel
+    """
     title: str
     content: str
 
