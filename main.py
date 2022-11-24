@@ -74,7 +74,7 @@ def get_post(post_id: int):
     return {"Post": post}
 
 
-def find_post(_id: int):
+def find_post(_id: int, response: Response):
     """
     This is a function whose work is to find the posts
 
