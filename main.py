@@ -4,6 +4,7 @@
     Project: ComprehensiveFastAPICourse
         I'm currently taking a FastAPI course from freecodecamp
 """
+from typing import Optional
 from fastapi import FastAPI
 from pydantic import BaseModel
 
@@ -20,6 +21,7 @@ class Post(BaseModel):
     title: str
     content: str
     published: bool = True
+    rating: Optional[int] = None
 
 
 @app.get("/")
