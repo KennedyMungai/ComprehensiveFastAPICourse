@@ -4,7 +4,7 @@
     Project: ComprehensiveFastAPICourse
         I'm currently taking a FastAPI course from freecodecamp
 """
-from fastapi import Body, FastAPI
+from fastapi import FastAPI
 from pydantic import BaseModel
 
 
