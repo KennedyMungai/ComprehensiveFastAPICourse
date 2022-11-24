@@ -31,6 +31,18 @@ my_posts = [
 ]
 
 
+def find_post(_id: int):
+    """
+    This is a function whose work is to find the posts
+
+    Args:
+        id (int): This is the Id of the post
+    """
+    for _p in my_posts:
+        if _p["id"] == _id:
+            return _p
+
+
 @app.get("/")
 def root():
     """
@@ -72,15 +84,3 @@ def get_post(post_id: int, response: Response):
     """
     post = find_post(post_id)
     return {"Post": post}
-
-
-def find_post(_id: int):
-    """
-    This is a function whose work is to find the posts
-
-    Args:
-        id (int): This is the Id of the post
-    """
-    for _p in my_posts:
-        if _p["id"] == _id:
-            return _p
