@@ -35,9 +35,7 @@ def root():
         Returns:
             JSON: Returns your typical JSON string although it is hardcoded
     """
-    return {
-        "message": "Welcome to this dank API"
-    }
+    return {"data": my_posts}
 
 
 @app.get("/posts")
