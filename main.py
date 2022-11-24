@@ -58,6 +58,6 @@ def create_posts(post: Post):
     post_dict = post.dict()
     post_dict['id'] = randrange(0, 1000000)
 
-    my_posts.append(post.dict())
+    my_posts.append(post_dict)
 
-    return {"data": f"{post}"}
+    return {"data": f"{post_dict}"}
