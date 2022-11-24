@@ -43,6 +43,12 @@ def find_post(_id: int):
             return _p
 
 
+def find_index_post(id: int):
+    for i, p in enumerate(my_posts):
+        if p['id'] == id:
+            return i
+
+
 @app.get("/")
 def root():
     """
