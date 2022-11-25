@@ -1,3 +1,3 @@
-select *
+select product_name
 FROM products
-WHERE price > 100000;
+WHERE id = 5;
