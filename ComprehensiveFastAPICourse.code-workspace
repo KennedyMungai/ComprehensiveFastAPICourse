@@ -5,6 +5,21 @@
     }
   ],
   "settings": {
-    "cSpell.words": ["createposts"]
+    "cSpell.words": ["createposts"],
+    "sqltools.connections": [
+      {
+        "mysqlOptions": {
+          "authProtocol": "default"
+        },
+        "previewLimit": 50,
+        "server": "localhost",
+        "port": 3306,
+        "driver": "MySQL",
+        "name": "fastapi-course-db",
+        "database": "fastapicoursedb",
+        "username": "root",
+        "password": "xknightmare12873"
+      }
+    ]
   }
 }
