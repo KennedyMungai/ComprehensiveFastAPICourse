@@ -1,6 +1,2 @@
-select id,
-    product_name,
-    price
-FROM products
-WHERE id in (1, 2, 3)
-ORDER BY id;
+INSERT INTO products(product_name, price, is_sale, inventory)
+VALUES("TV Blue", 15500, 1, 8)
