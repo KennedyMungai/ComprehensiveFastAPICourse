@@ -1,6 +1,7 @@
 select product_name,
     price,
-    inventory
+    created_at
 FROM products
 WHERE product_name not LIKE '%en%'
-ORDER BY price;
+ORDER BY created_at DESC,
+    product_name;
