@@ -1,3 +1,6 @@
-select product_name
+select product_name,
+    price
 FROM products
-WHERE id = 5;
+WHERE inventory >= 0
+    AND price > 859663
+ORDER BY product_name;
