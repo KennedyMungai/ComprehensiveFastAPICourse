@@ -1,2 +1,2 @@
-INSERT INTO products (product_name, price)
-VALUES ('Private Jet', '999999999');
+ALTER TABLE products
+add COLUMN is_sale boolean DEFAULT 0
