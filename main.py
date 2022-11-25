@@ -134,7 +134,7 @@ def update_post(_id: int, _post: Post):
         HTTPException: This exception is raised if the post being looked for doesn't exist
 
     Returns:
-        _type_: Returns a dictionary showing that the post has been updated
+        _type_: Returns a dictionary of the data that has been updated
     """
     index = find_index_post(_id)
 
