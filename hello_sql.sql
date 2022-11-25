@@ -1,2 +1,5 @@
-INSERT INTO products(product_name, price, is_sale, inventory)
-VALUES("TV Yellow", 16499, 1, 9)
+select product_name,
+    price,
+    inventory
+FROM products
+WHERE product_name LIKE 'TV%';
