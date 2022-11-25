@@ -52,9 +52,9 @@ def find_index_post(_id: int):
     Returns:
         post: Returns the post of the id indicated
     """
-    for i, p in enumerate(my_posts):
-        if p['id'] == _id:
-            return i
+    for _i, _p in enumerate(my_posts):
+        if _p['id'] == _id:
+            return _i
 
 
 @app.get("/")
