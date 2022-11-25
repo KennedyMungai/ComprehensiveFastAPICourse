@@ -5,15 +5,21 @@
         I'm currently taking a FastAPI course from freecodecamp
 """
 
-import mysql.connector
-
 from typing import Optional
 from random import randrange
+import mysql.connector
+
 from fastapi import FastAPI, Response, status, HTTPException
 from pydantic import BaseModel
 
 
 app = FastAPI()
+
+database = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="xknightmare12873"
+)
 
 
 class Post(BaseModel):
