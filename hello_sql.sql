@@ -5,4 +5,4 @@ FROM products
 WHERE product_name not LIKE '%en%'
 ORDER BY created_at DESC,
     product_name
-LIMIT 5;
+LIMIT 3 OFFSET 3;
