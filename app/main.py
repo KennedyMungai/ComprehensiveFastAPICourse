@@ -4,6 +4,9 @@
     Project: ComprehensiveFastAPICourse
         I'm currently taking a FastAPI course from freecodecamp
 """
+
+import mysql.connector
+
 from typing import Optional
 from random import randrange
 from fastapi import FastAPI, Response, status, HTTPException
