@@ -122,7 +122,7 @@ def delete_post(post_id: int):
     return Response(status_code=status.HTTP_204_NO_CONTENT)
 
 
-@app.put("/posts/{id}")
+@app.put("/posts/{_id}")
 def update_post(_id: int, _post: Post):
     """This is a function that executes at the update endpoint
 
@@ -143,4 +143,7 @@ def update_post(_id: int, _post: Post):
                             detail=f"Post with id: {_id} does not exist")
 
     post_dict = _post.dict()
+    post_dict['_id'] = id
+    my_posts[index] = post_dict
+
     return {"message": "updated post"}
