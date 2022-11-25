@@ -124,6 +124,18 @@ def delete_post(post_id: int):
 
 @app.put("/posts/{id}")
 def update_post(_id: int, _post: Post):
+    """This is a function that executes at the update endpoint
+
+    Args:
+        _id (int): The identifier of the post
+        _post (Post): The post itself
+
+    Raises:
+        HTTPException: This exception is raised if the post being looked for doesn't exist
+
+    Returns:
+        _type_: Returns a dictionary showing that the post has been updated
+    """
     index = find_index_post(_id)
 
     if index is None:
