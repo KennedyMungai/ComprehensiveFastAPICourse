@@ -8,6 +8,7 @@
 from typing import Optional
 from random import randrange
 import mysql.connector
+import time
 
 from fastapi import FastAPI, Response, status, HTTPException
 from pydantic import BaseModel
