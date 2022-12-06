@@ -25,6 +25,8 @@ try:
 except Exception as ex:
     print("The database cannot connect because of " + ex)
 
+cursor = database.cursor(dictionary=True)
+
 
 class Post(BaseModel):
     """
