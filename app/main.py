@@ -15,7 +15,7 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
-conn = mysql.connector.connect(
+database = mysql.connector.connect(
     host="localhost",
     user="root",
     password="xknightmare12873"
