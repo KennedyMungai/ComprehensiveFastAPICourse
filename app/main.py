@@ -16,18 +16,18 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
-while True:
-    try:
-        database = mysql.connector.connect(
-            host="localhost",
-            user="root",
-            password="xknightmare12873",
-            database="fastapicoursedb"
-        )
-        cursor = database.cursor(dictionary=True)
-    except Exception as error:
-        print("Error", error)
-        time.sleep(3)
+# while True:
+try:
+    database = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="xknightmare12873",
+        database="fastapicoursedb"
+    )
+    cursor = database.cursor(dictionary=True)
+except Exception as error:
+    print("Error", error)
+    time.sleep(3)
 
 
 class Post(BaseModel):
@@ -90,6 +90,8 @@ def get_posts():
     """
         This is a simple function that retrieves all the posts
     """
+    posts = cursor.execute('SELECT * FROM Posts')
+    print(posts)
     return {"data": " This is all your posts"}
 
 
