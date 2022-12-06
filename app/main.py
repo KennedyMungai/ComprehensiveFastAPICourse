@@ -21,8 +21,6 @@ conn = mysql.connector.connect(
     password="xknightmare12873"
 )
 
-print(conn)
-
 
 class Post(BaseModel):
     """
