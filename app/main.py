@@ -15,17 +15,17 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
-try:
-    database = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="xknightmare12873",
-        database="fastapicoursedb"
-    )
-except Exception as error:
-    print(error)
-
-cursor = database.cursor(dictionary=True)
+while True:
+    try:
+        database = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            password="xknightmare12873",
+            database="fastapicoursedb"
+        )
+        cursor = database.cursor(dictionary=True)
+    except Exception as error:
+        print("Error", error)
 
 
 class Post(BaseModel):
