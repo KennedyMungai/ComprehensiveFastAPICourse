@@ -92,7 +92,7 @@ def get_posts():
     """
     posts = cursor.execute('SELECT * FROM Posts')
     print(posts)
-    return {"data": " This is all your posts"}
+    return {"data": posts}
 
 
 @app.post("/posts", status_code=status.HTTP_201_CREATED)
