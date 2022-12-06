@@ -22,8 +22,8 @@ try:
         password="xknightmare12873",
         database="fastapicoursedb"
     )
-except Exception:
-    print("The database cannot connect because of " + Exception)
+except Exception as ex:
+    print("The database cannot connect because of " + ex)
 
 cursor = database.cursor()
 
