@@ -23,7 +23,7 @@ try:
         database="fastapicoursedb"
     )
 except Exception as error:
-    print("The database cannot connect because of ", error)
+    print(error)
 
 cursor = database.cursor(dictionary=True)
 
