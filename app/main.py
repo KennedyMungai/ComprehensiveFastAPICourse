@@ -15,11 +15,13 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
-database = mysql.connector.connect(
+conn = mysql.connector.connect(
     host="localhost",
     user="root",
     password="xknightmare12873"
 )
+
+print(conn)
 
 
 class Post(BaseModel):
