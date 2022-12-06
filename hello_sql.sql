@@ -1,3 +1,9 @@
+-- Active: 1670320493036@@127.0.0.1@3306@fastapicoursedb
+-- ------------------------------------------
+-- ------------------------------------------
+-- A simple insert statement for the Posts table
+-- ------------------------------------------
+-- ------------------------------------------
 INSERT INTO Posts (title, content)
 VALUES(
         "The first title",
