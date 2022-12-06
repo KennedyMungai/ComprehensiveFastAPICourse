@@ -15,12 +15,15 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
-database = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="xknightmare12873",
-    database="fastapicoursedb"
-)
+try:
+    database = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="xknightmare12873",
+        database="fastapicoursedb"
+    )
+except Exception:
+    print("The database cannot connect because of " + Exception)
 
 cursor = database.cursor()
 
