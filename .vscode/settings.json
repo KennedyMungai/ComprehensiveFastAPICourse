@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["createposts", "fastapicoursedb", "sqltools"]
+  "cSpell.words": ["createposts", "fastapicoursedb", "sqltools"],
+  "python.analysis.typeCheckingMode": "basic"
 }
