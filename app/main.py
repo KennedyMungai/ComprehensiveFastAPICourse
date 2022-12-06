@@ -21,6 +21,8 @@ database = mysql.connector.connect(
     password="xknightmare12873"
 )
 
+cursor = database.cursor()
+
 
 class Post(BaseModel):
     """
