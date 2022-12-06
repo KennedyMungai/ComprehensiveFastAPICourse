@@ -23,6 +23,11 @@ database = mysql.connector.connect(
 
 cursor = database.cursor()
 
+cursor.execute('SHOW DATABASES;')
+
+for x in cursor:
+    print(x)
+
 
 class Post(BaseModel):
     """
