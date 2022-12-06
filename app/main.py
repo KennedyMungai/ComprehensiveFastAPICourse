@@ -27,6 +27,7 @@ while True:
         cursor = database.cursor(dictionary=True)
     except Exception as error:
         print("Error", error)
+        time.sleep(3)
 
 
 class Post(BaseModel):
