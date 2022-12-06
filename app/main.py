@@ -25,13 +25,6 @@ try:
 except Exception as ex:
     print("The database cannot connect because of " + ex)
 
-cursor = database.cursor()
-
-cursor.execute('SHOW TABLES;')
-
-for x in cursor:
-    print(x)
-
 
 class Post(BaseModel):
     """
