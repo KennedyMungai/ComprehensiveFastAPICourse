@@ -88,11 +88,12 @@ def root():
 @app.get("/posts")
 def get_posts():
     """
-        This is a simple function that retrieves all the posts
+        This is a simple function that retrie   ves all the posts
     """
     posts = cursor.execute('SELECT * FROM Posts')
     print(posts)
-    return {"data": posts}
+    # return {"data": posts}
+    return {"data": my_posts}
 
 
 @app.post("/posts", status_code=status.HTTP_201_CREATED)
