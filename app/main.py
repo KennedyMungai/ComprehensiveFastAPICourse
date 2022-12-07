@@ -18,13 +18,13 @@ app = FastAPI()
 
 # while True:
 try:
-    database = mysql.connector.connect(
+    conn = mysql.connector.connect(
         host="localhost",
         user="root",
         password="xknightmare12873",
         database="fastapicoursedb"
     )
-    cursor = database.cursor(dictionary=True)
+    cursor = conn.cursor(dictionary=True)
 except Exception as error:
     print("Error", error)
     time.sleep(3)
@@ -103,6 +103,8 @@ def create_posts(post: Post):
     """
     cursor.execute("INSERT INTO Posts(title, content, is_published) VALUES (%s, %s, %s)",
                    (post.title, post.content, post.published))
+
+    cursor.
 
     return {"data": "created post"}
 
