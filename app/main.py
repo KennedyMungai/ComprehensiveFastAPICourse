@@ -6,8 +6,8 @@
 """
 
 from typing import Optional
-from random import randrange
-import time
+# from random import randrange
+# import time
 import mysql.connector
 
 from fastapi import FastAPI, Response, status, HTTPException
@@ -27,8 +27,8 @@ try:
 
     cursor = conn.cursor(dictionary=True)
 except mysql.connector.Error as error:
-    print("Error", error)
-    time.sleep(3)
+    print("The database does not exist")
+    exit(1)
 
 
 class Post(BaseModel):
@@ -105,6 +105,8 @@ def create_posts(post: Post):
     cursor.execute("INSERT INTO Posts(title, content, is_published) VALUES (%s, %s, %s)",
                    (post.title, post.content, post.published))
 
+    cursor.close()
+    conn.close()
     return {"data": "created post"}
 
 
