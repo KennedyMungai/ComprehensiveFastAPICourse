@@ -107,7 +107,7 @@ def create_posts(post: Post):
 
     cursor.close()
     conn.close()
-    return {"data": "created post"}
+    return {"data": post}
 
 
 @app.get("/posts/{post_id}")
