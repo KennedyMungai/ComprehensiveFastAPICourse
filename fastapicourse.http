@@ -1,1 +1,4 @@
+### This is the root endpoint
 get http://127.0.0.1:8000/
+
+### The endpoint to get all the posts
