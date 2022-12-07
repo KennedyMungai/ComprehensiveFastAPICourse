@@ -24,6 +24,7 @@ try:
         password="xknightmare12873",
         database="fastapicoursedb"
     )
+
     cursor = conn.cursor(dictionary=True)
 except Exception as error:
     print("Error", error)
