@@ -88,7 +88,7 @@ def root():
 @app.get("/posts")
 def get_posts():
     """
-        This is a simple function that retrie   ves all the posts
+        This is a simple function that retrieves all the posts
     """
     posts = cursor.execute('SELECT * FROM Posts')
     print(posts)
@@ -101,12 +101,8 @@ def create_posts(post: Post):
     """
         This is an API function thar creates posts
     """
-    post_dict = post.dict()
-    post_dict['id'] = randrange(0, 1000000)
 
-    my_posts.append(post_dict)
-
-    return {"data": f"{post_dict}"}
+    return {"data": "created post"}
 
 
 @app.get("/posts/{post_id}")
