@@ -105,8 +105,6 @@ def create_posts(post: Post):
     cursor.execute("INSERT INTO Posts(title, content, is_published) VALUES (%s, %s, %s)",
                    (post.title, post.content, post.published))
 
-    cursor.
-
     return {"data": "created post"}
 
 
