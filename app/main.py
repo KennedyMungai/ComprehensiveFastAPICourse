@@ -26,7 +26,7 @@ try:
     )
 
     cursor = conn.cursor(dictionary=True)
-except Exception as error:
+except mysql.connector.Error as error:
     print("Error", error)
     time.sleep(3)
 
